@@ -1,7 +1,7 @@
-import pokemon_fetcher
+from .pokemon_fetcher import PokemonFetcher
 from requests.exceptions import HTTPError
 
-fetcher = pokemon_fetcher.PokemonFetcher()
+fetcher = PokemonFetcher()
 
 def breeding_count(pokemon: str) -> int:
     try:
